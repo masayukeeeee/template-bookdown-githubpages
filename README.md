@@ -71,6 +71,14 @@ bookdown::render_book("book", output_dir="../docs")
 
 `output_dir` is relateve path from rendered dir.
 
+## Put `.nojekyll` file
+
+```{r}
+if(!file.exists("docs/.nojekyll")){
+  file.create("docs/.nojekyll")
+}
+```
+
 ## Push to main branch
 
 Finally, please push this changes to the repository.
